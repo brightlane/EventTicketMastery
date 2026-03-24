@@ -164,3 +164,102 @@
 
 </body>
 </html>
+<section id="testimonials">
+  <h2>User Testimonials</h2>
+  <div class="testimonial">
+    <p>"I love using StubHub to buy tickets for concerts and sports events. The process is easy, and I know I can trust them." <strong>- Sarah L.</strong></p>
+  </div>
+  <div class="testimonial">
+    <p>"Selling tickets on StubHub is quick and secure. They have an excellent platform for sellers!" <strong>- Michael T.</strong></p>
+  </div>
+  <div class="testimonial">
+    <p>"I always find the best deals for concert tickets on StubHub. It's my go-to for event tickets." <strong>- Emma K.</strong></p>
+  </div>
+  <a class="btn" href="https://stubhub.prf.hn/click/camref:1100l5mzXr">Join StubHub Today</a>
+</section>
+
+<section>
+  <h2>Why Choose StubHub?</h2>
+  <p>StubHub has built a strong reputation in the ticketing industry, offering a wide variety of tickets for concerts, sports, theater, and more. Their marketplace ensures secure transactions and buyer protection, making it one of the best platforms to buy and sell tickets online.</p>
+  <ul>
+    <li>100% Buyer Guarantee</li>
+    <li>Access to Hard-to-Find Tickets</li>
+    <li>Mobile App for On-the-Go Ticket Purchases</li>
+    <li>Flexible Delivery Options</li>
+    <li>Competitive Pricing</li>
+  </ul>
+  <a class="btn" href="https://stubhub.prf.hn/click/camref:1100l5mzXr">Start Shopping Now</a>
+</section>
+
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <button>Is StubHub safe to buy from?</button>
+    <div class="faq-answer">
+      <p>Yes, StubHub is one of the most trusted platforms for buying and selling event tickets, with buyer protection and secure payment options.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>Can I sell my tickets on StubHub?</button>
+    <div class="faq-answer">
+      <p>Yes, you can easily list your event tickets on StubHub and sell them at the best prices. They provide a hassle-free selling experience.</p>
+    </div>
+  </div>
+  <div class="faq-item">
+    <button>What types of events can I find on StubHub?</button>
+    <div class="faq-answer">
+      <p>StubHub offers tickets for concerts, sports events, theater shows, comedy, festivals, and more. You'll find a wide variety of events on their platform.</p>
+    </div>
+  </div>
+  <a class="btn" href="https://stubhub.prf.hn/click/camref:1100l5mzXr">Learn More About StubHub</a>
+</section>
+
+<section>
+  <h2>Comparing StubHub to Other Ticket Platforms</h2>
+  <p>When it comes to buying and selling tickets, StubHub is one of the leading platforms in the industry. Let’s compare StubHub with other popular ticket-selling platforms:</p>
+  <ul>
+    <li><strong>StubHub vs Ticketmaster:</strong> StubHub offers a wider variety of tickets, often including hard-to-find ones, while Ticketmaster is limited to the primary market.</li>
+    <li><strong>StubHub vs Vivid Seats:</strong> StubHub offers better buyer protection and a more user-friendly platform, making it easier for buyers and sellers to engage.</li>
+    <li><strong>StubHub vs SeatGeek:</strong> StubHub provides a more comprehensive search tool and often lower service fees compared to SeatGeek.</li>
+  </ul>
+  <a class="btn" href="https://stubhub.prf.hn/click/camref:1100l5mzXr">Visit StubHub Now</a>
+</section>
+
+<footer>
+  <p>&copy; <script>document.write(new Date().getFullYear());</script> Event Ticket Mastery | All Rights Reserved</p>
+  <p><strong>Contact:</strong> <a href="https://www.stubhub.com/contact">StubHub Contact Page</a></p>
+  <p><strong>Privacy Policy & Terms of Service:</strong> <a href="https://www.stubhub.com/privacy">StubHub Privacy Policy</a></p>
+</footer>
+
+<script>
+  // Lazy-load images
+  document.addEventListener("DOMContentLoaded", function() {
+    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+    if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            let img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.add("loaded");
+            lazyImageObserver.unobserve(img);
+          }
+        });
+      });
+      lazyImages.forEach(function(img) {
+        lazyImageObserver.observe(img);
+      });
+    }
+  });
+
+  // FAQ toggle
+  const items = document.querySelectorAll(".faq-item button");
+  items.forEach(btn => {
+    btn.addEventListener("click", () => {
+      btn.nextElementSibling.classList.toggle("show");
+    });
+  });
+</script>
+
+</body>
+</html>
