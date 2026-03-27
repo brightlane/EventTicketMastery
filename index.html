@@ -24,26 +24,37 @@
   <meta name="twitter:description" content="Learn how StubHub outperforms other ticket sellers.">
   <meta name="twitter:image" content="https://brightlane.github.io/EventTicketMastery/images/StubHub-logo.jpg">
 
-  <!-- ✅ REVIEW STRUCTURED DATA -->
+  <!-- ✅ PRODUCT + REVIEW STRUCTURED DATA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Review",
-    "itemReviewed": {
+    "@type": "Product",
+    "name": "StubHub Tickets",
+    "image": "https://brightlane.github.io/EventTicketMastery/images/StubHub-logo.jpg",
+    "description": "Buy and sell event tickets securely on StubHub.",
+    "brand": {
       "@type": "Organization",
       "name": "StubHub",
       "url": "https://www.stubhub.com"
     },
-    "author": {
-      "@type": "Organization",
-      "name": "Event Ticket Mastery"
+    "review": {
+      "@type": "Review",
+      "author": {
+        "@type": "Organization",
+        "name": "Event Ticket Mastery"
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": 4.8,
+        "bestRating": 5
+      },
+      "reviewBody": "StubHub is a trusted marketplace for buying and selling event tickets with strong buyer protection and wide availability."
     },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": "4.8",
-      "bestRating": "5"
-    },
-    "reviewBody": "StubHub is a trusted marketplace for buying and selling event tickets with strong buyer protection and wide availability."
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": 4.8,
+      "reviewCount": 50
+    }
   }
   </script>
 
